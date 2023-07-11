@@ -13,14 +13,7 @@ metadata:
 spec:
   rules:
   - http:
-      paths:
-      - backend:
-          service:
-            name: ssl-redirect
-            port:
-              name: use-annotation
-        path: /*
-        pathType: ImplementationSpecific
+      paths:      
       - backend:
           service:
             name: istio-ingressgateway
