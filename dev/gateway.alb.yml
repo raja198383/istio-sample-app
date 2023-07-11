@@ -16,7 +16,8 @@ spec:
         - path: /
           
           backend:
-            service:
-              name: productpage
-              port:
-                  number: 9080
+              route:
+              - destination:
+                  host: productpage
+                  port:
+                    number: 9080
