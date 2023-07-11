@@ -13,11 +13,11 @@ metadata:
 spec:
   rules:
   - http:
-      paths:      
-      - backend:
-          service:
-            name: istio-ingressgateway
-            port:
-              number: 80
-        path: /*
-        
+      paths:
+        - path: /productpage
+          pathType: Prefix
+          backend:
+            service:
+              name: productpage
+              port:
+                  number: 80
