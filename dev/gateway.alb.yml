@@ -13,11 +13,15 @@ spec:
   rules:
   - http:
       paths:
-        - path: /
+        path: /*
+        pathType: ImplementationSpecific
+      - backend:
+          service:
+            name: istio-ingressgateway
+            port:
+              number: 80
+        path: /*
+        pathType: ImplementationSpecific
           
-          backend:
-              route:
-              - destination:
-                  host: productpage
-                  port:
-                    number: 9080
+            
+          
