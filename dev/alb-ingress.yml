@@ -13,7 +13,7 @@ spec:
       paths:
       - backend:
           service:
-            name: istio-ingressgateway
+            name: bookinfo-gateway
             port:
               number: 80
         path: /*
