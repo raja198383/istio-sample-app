@@ -16,6 +16,8 @@ spec:
         - backend:
               serviceName: produtpage
               servicePort: 9080
+          path: /*
+          pathType: ImplementationSpecific
             
              
       
