@@ -11,6 +11,7 @@ metadata:
   name: istio-frb-alb
   namespace: istio-system
 spec:
+  ingressClassName: alb
   rules:
   - http:
       paths:      
