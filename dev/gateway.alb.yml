@@ -13,15 +13,14 @@ spec:
   rules:
   - http:
       paths:
-        path: /*
-        pathType: ImplementationSpecific
+        path: /*      
       - backend:
           service:
             name: istio-ingressgateway
             port:
               number: 80
         path: /*
-        pathType: ImplementationSpecific
+        
           
             
           
